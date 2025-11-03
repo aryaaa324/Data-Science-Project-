@@ -439,43 +439,45 @@ print(classification_report(y_test, y_pred_svm))
 ---
 
 ### **Step 10 | Conclusion** <a name="conclusion"></a>
-We conclude by:
-- Comparing model performance
-- Identifying the model with the highest recall / best predictive power
-- Summarizing key EDA insights and important predictive features
-- Suggesting future improvements such as:
-  - Collecting more patient data
-  - Trying deep learning models
-  - Improving medical feature engineering
+
+We conclude the project by comparing the performance of different machine learning models and identifying the most effective one for **heart disease prediction**.
+
+The goal was to maximize **Recall for class 1 (heart disease present)**, as in medical applications, **identifying positive cases correctly** is more critical than minimizing false positives.
+
+##  **Model Building & Performance Summary**
+
+| Model                  | Needs Scaling | Key Strength                           | Notes                                             |
+| ---------------------- | ------------- | -------------------------------------- | ------------------------------------------------- |
+| **Decision Tree (DT)** | No            | Easy to interpret                      | Slightly lower recall, prone to overfitting       |
+| **Random Forest (RF)** | No            | **High robustness & interpretability** | Stable and reliable performance                   |
+| **KNN**                |  Yes         | **Highest recall**                     | Requires feature scaling, sensitive to noisy data |
+| **SVM**                |  Yes         | Strong class separation                | Recall depends on kernel and tuning               |
 
 ---
 
-##  Model Building & Performance Summary
+###  **Key Observations**
 
-| Model | Needs Scaling | Key Strength | Notes |
-|------|-------------|-------------|------|
-| Decision Tree | No | Easy to interpret | Prone to overfitting |
-| Random Forest | No | **High recall & robustness** | Best overall model |
-| KNN | Yes | Simple, distance-based | Highly scale-sensitive |
-| SVM | Yes | Strong boundary classification | Recall depends on kernel selection |
+* **KNN achieved the highest recall (0.82)** for detecting heart disease, making it the best model in identifying positive cases.
+* **Random Forest and KNN both achieved the highest accuracy (0.84)** overall.
+* Although **Random Forest** had slightly lower recall (0.81), it remains **more robust and generalizable**, making it a better choice for real-world deployment.
+* **Data preprocessing** — including encoding, scaling, and Box-Cox transformation — played a crucial role in improving model consistency.
 
-**Metric Focus:**  
- Recall (Sensitivity) for class 1 (heart disease present) was prioritized.
+###  **Final Conclusion**
 
----
+* **KNN** performed best in terms of **recall**, crucial for medical screening tasks.
+* **Random Forest** offered the **most balanced and reliable** performance overall.
+* These models can assist healthcare professionals in **early detection of heart disease** and **risk assessment**.
 
-##  Conclusion
-- **Random Forest** performed best with **high recall**, making it suitable for medical early-warning systems.
-- Proper **data preprocessing** significantly improved model reliability.
-- The model can assist healthcare professionals by supporting early risk screening.
+###  **Future Scope**
 
-###  Future Scope:
-- Larger real-world clinical datasets
-- Deep learning & ensemble stacking
-- deployment for clinical usage
+* Use **larger, real-world clinical datasets** for better generalization.
+* Experiment with **ensemble stacking** and **deep learning (CNNs, RNNs)**.
+* Explore **feature importance analysis** to identify critical medical predictors.
+* Deploy as a **web or mobile app** for healthcare decision support.
 
 ---
 
-##  License
+###  **License**
+
 This project is licensed under the **MIT License**.
 
