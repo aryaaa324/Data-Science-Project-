@@ -424,17 +424,28 @@ print(classification_report(y_test, y_pred_svm))
 
 ##  **Model Comparison**
 
-| Model         | Accuracy  | Recall    | Precision | F1-Score  |
-| ------------- | --------- | --------- | --------- | --------- |
-| Decision Tree | 83.2%     | 84.6%     | 82.1%     | 83.3%     |
-| Random Forest | **89.4%** | **91.2%** | 88.5%     | **89.8%** |
-| KNN           | 84.1%     | 85.5%     | 83.9%     | 84.7%     |
-| SVM           | 86.8%     | 88.0%     | 86.1%     | 87.0%     |
+| Model          | Accuracy | Recall (class 1) | Precision (class 1) | F1-Score (class 1) |
+|----------------|-----------|------------------|----------------------|--------------------|
+| Decision Tree  | 79%       | 0.85             | 0.78                 | 0.81               |
+| Random Forest  | **84%**   | **0.88**         | **0.83**             | **0.85**           |
+| KNN            | **84%**   | 0.85             | 0.85                 | 0.85               |
+| SVM            | 79%       | **0.97**         | 0.73                 | 0.83               |
 
- **Best Model: Random Forest Classifier**
+---
 
-> High recall → detects most heart disease patients
-> Robust, stable, interpretable feature importance
+## Final Verdict
+
+- **Random Forest →** Best balanced model (high recall & accuracy)  
+- **SVM →** Excellent recall but lower precision (too many false alarms)  
+- **KNN →** Similar to RF, slightly less recall  
+- **Decision Tree →** Simplest but least accurate  
+
+### Summary
+
+- **Random Forest** achieved the best overall performance with strong recall (0.88) and high accuracy (84%).  
+- **SVM** detected nearly all positive cases (recall = 0.97) but at the cost of low precision.  
+- **KNN** performed competitively, showing good precision–recall balance.  
+- **Decision Tree** offered easy interpretability but was more prone to overfitting.  
 
 ---
 
