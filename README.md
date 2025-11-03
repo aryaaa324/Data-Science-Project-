@@ -99,7 +99,7 @@ The dataset consists of medical records used to determine heart disease likeliho
 | **`Target`**     | 1 = Heart Disease, 0 = No Heart Disease                 | Binary      |
 
 ---
-##  Step-by-Step Explanation (Simple & Clear)
+##  Step-by-Step Explanation 
 
 ### **Step 1 | Import Libraries** <a name="import"></a>
 We begin by importing all the required Python libraries that will help in:
