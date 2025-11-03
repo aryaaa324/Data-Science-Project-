@@ -39,7 +39,6 @@ Develop a machine learning model that predicts whether a patient is at risk of h
 ---
 
 ##  Table of Contents  
-**(As provided — unchanged and preserved exactly)**
 
 * [Step 1 | Import Libraries](#import)
 * [Step 2 | Read Dataset](#read)
