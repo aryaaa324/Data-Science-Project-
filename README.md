@@ -203,7 +203,6 @@ data['ChestPainType'].fillna(data['ChestPainType'].mode()[0], inplace=True)
 
 >  *Alternative approach:* You can use **KNN Imputer** for more data-driven imputation if the dataset has complex patterns.
 
-
 ### **5.3 | Outlier Detection & Treatment**
 
 Outliers (extremely high or low values) can distort model training, especially for algorithms that rely on distance or mean values.
@@ -266,6 +265,14 @@ data['Cholesterol'] = np.log1p(data['Cholesterol'])
 ```
 
 After preprocessing, the data is **clean, normalized, and ready** for model training.
+
+> **Preprocessing Summary:**
+>
+> * Handled missing values using median/mode imputation
+> * Encoded categorical features (One-Hot / Label Encoding)
+> * Scaled continuous variables with `StandardScaler`
+> * Removed outliers using IQR method
+> * Split dataset: 80% training, 20% testing
 
 ---
 
