@@ -489,6 +489,16 @@ The goal was to maximize **Recall for class 1 (heart disease present)**, as in m
 * Deploy as a **web or mobile app** for healthcare decision support.
 ----
 ## 🧩 References
+## 🔁 Comparison with Published Work
+
+| Source (paper) | Dataset used | Best model reported | Reported metric(s) (key) | Validation / Notes |
+|---|---:|---|---|---|
+| **This work (you)** | UCI / Cleveland (heart.csv) | Random Forest (balanced) — also KNN & SVM competitive | **RF:** Accuracy = **84%**, Recall(class1)=**0.88**, Precision(class1)=0.83, F1(class1)=0.85. <br> **KNN:** Accuracy = 84%, Recall=0.85. <br> **SVM:** Accuracy = 79%, Recall=0.97. | Train/test split (80/20); hyperparameter tuning with GridSearchCV; prioritized Recall for class1. |
+| Rimal et al. (2025) — *Comparative analysis…* :contentReference[oaicite:0]{index=0} | Cleveland / combined UCI sets | Random Forest / KNN often top depending on CV | Cross-val (5-fold) results show **RF & KNN ≈ 84.15% (avg accuracy)**; RF reported strong macro metrics (precision/recall high) when tuned/ensembled. Also report RF macro accuracy up to ~94% in some tuned configs. | Uses 5-fold CV; reports both per-fold ranges and averaged scores; highlights that choice of preprocessing & CV affects reported maxima. :contentReference[oaicite:1]{index=1} |
+| Sarra et al. (MDPI, 2022) — χ²-based SVM improvement :contentReference[oaicite:2]{index=2} | Cleveland & Statlog (UCI) | χ²-based SVM (feature selection + SVM) | **Before FS:** SVM on Cleveland: Accuracy = 84.21%, Sensitivity ≈ 0.6745. <br> **After χ² feature selection:** SVM on Cleveland: **Accuracy = 89.47%**, Sensitivity (recall) substantially improved; reported AUC ≈ 0.90. | 75:25 train:test & experiments with feature selection; shows feature reduction (14 → 6) improved SVM results. :contentReference[oaicite:3]{index=3} |
+| Srinivasan et al. (Scientific Reports, 2023) — active learning & ensembles :contentReference[oaicite:4]{index=4} | UCI heart datasets (various) | Hybrid / ensemble models (voting/stacking) | Reports a **voting/hybrid ensemble** with accuracy ≈ **85.48%** in their setup; also highlights improvements by bagging/boosting and feature selection; notes deep NN and ensemble methods can reach much higher metrics on some splits. | Uses ensemble/active learning pipelines; shows ensemble voting improves over single models; emphasizes differences caused by folds and preprocessing. :contentReference[oaicite:5]{index=5} |
+
+
 
 1. Detrano, R. et al. (1989). *Cleveland Heart Disease Dataset*, UCI Machine Learning Repository.  
    🔗 [https://archive.ics.uci.edu/ml/datasets/heart+disease](https://archive.ics.uci.edu/ml/datasets/heart+disease)
