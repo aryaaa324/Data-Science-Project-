@@ -489,24 +489,21 @@ The goal was to maximize **Recall for class 1 (heart disease present)**, as in m
 * Deploy as a **web or mobile app** for healthcare decision support.
 
 ---
-Here’s your **GitHub-ready Markdown** version with proper formatting, syntax highlighting, and emojis 👇
-
+## Steps to Run the Code
 ````markdown
-## 💻 Steps to Run the Code
-
-### 🧩 Clone the Repository
+### Clone the Repository
 ```bash
 git clone https://github.com/yourusername/HeartDiseasePrediction.git
 cd HeartDiseasePrediction
 ````
 
-### ⚙️ Install Dependencies
+### Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 🚀 Run the Notebook or Script
+### Run the Notebook or Script
 
 ```bash
 # Option 1: Run using Jupyter Notebook
@@ -516,8 +513,8 @@ jupyter notebook Heart_Disease_Prediction.ipynb
 python main.py
 ```
 
-> ⚠️ **Note:** Make sure the `heart.csv` file is present in the same directory before running the code.
-
+> **Note:** Make sure the `heart.csv` file is present in the same directory before running the code.
+-----
 ###  **License**
 
 This project is licensed under the **MIT License**.
