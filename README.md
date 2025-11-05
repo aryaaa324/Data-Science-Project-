@@ -149,7 +149,17 @@ We examine:
 - Data types of each feature (numerical / categorical)
 - Whether missing values are present
 ```python
-df.info()
+# Total rows and columns
+print("\n Dataset Shape:")
+print(f"Rows: {data.shape[0]}, Columns: {data.shape[1]}")
+
+# Data types of each feature
+print("\n Data Types:")
+print(data.dtypes)
+
+# Check for missing values
+print("\n Missing Values per Column:")
+print(data.isnull().sum())
 ```
 This helps us understand what type of preprocessing is needed.
 
