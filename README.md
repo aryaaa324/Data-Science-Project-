@@ -490,22 +490,21 @@ The goal was to maximize **Recall for class 1 (heart disease present)**, as in m
 
 ---
 ## Steps to Run the Code
-````markdown
+```python
 ### Clone the Repository
 ```bash
 git clone https://github.com/yourusername/HeartDiseasePrediction.git
 cd HeartDiseasePrediction
-````
+```
 
 ### Install Dependencies
-
-```bash
+```python
 pip install -r requirements.txt
 ```
 
 ### Run the Notebook or Script
 
-```bash
+```python
 # Option 1: Run using Jupyter Notebook
 jupyter notebook Heart_Disease_Prediction.ipynb
 
