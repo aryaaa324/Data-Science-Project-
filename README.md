@@ -81,7 +81,7 @@ Develop a machine learning model that predicts whether a patient is at risk of h
 ---
 
 ##  Dataset Overview
-> The dataset used in this project is the **Heart Disease Dataset** from the **UCI Machine Learning Repository** (also available on Kaggle: [Heart Disease UCI Dataset](https://www.kaggle.com/datasets/cherngs/heart-disease-cleveland-uci)).
+> The dataset used in this project is the **Heart Disease Dataset** from the **UCI Machine Learning Repository** (also available on Kaggle: [Heart Disease UCI Dataset]([https://www.kaggle.com/datasets/cherngs/heart-disease-cleveland-uci](https://www.kaggle.com/datasets/redwankarimsony/heart-disease-data))).
 > It consists of **303 patient records** with **14 medical features** such as age, sex, cholesterol level, and chest pain type.
 > The dataset consists of medical records used to determine heart disease likelihood.
 
