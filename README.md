@@ -42,7 +42,7 @@ Develop a machine learning model that predicts whether a patient is at risk of h
 
 * [Step 1 | Import Libraries](#import)
 * [Step 2 | Read Dataset](#read)
-* [Step 3 | Dataset Overview](#overview)
+* [Step 3 | Understanding the Data](#overview)
     - [Step 3.1 | Dataset Basic Information](#basic)
     - [Step 3.2 | Summary Statistics for Numerical Variables](#num_statistics)
     - [Step 3.3 | Summary Statistics for Categorical Variables](#cat_statistics)
@@ -119,7 +119,7 @@ This allows us to work with the data in a structured table format and perform fu
 
 ---
 
-### **Step 3 | Dataset Overview** <a name="overview"></a>
+### **Step 3 | Understanding the Data** <a name="understanding"></a>
 In this step, we get an initial understanding of the dataset.
 
 #### **3.1 Dataset Basic Information** <a name="basic"></a>
