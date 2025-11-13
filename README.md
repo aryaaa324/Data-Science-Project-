@@ -184,7 +184,7 @@ This project provides an end-to-end health data analytics workflow based on Indi
 ## 11. Credits
 
 - Analysis by [Arya Kashikar]
-- Data: [Govt. of India or official source](https://www.data.gov.in/)]
+- Data: [data.gov.in](https://www.data.gov.in/)]
 - Libraries: pandas, numpy, scikit-learn, seaborn, matplotlib, xgboost, lightgbm
 
 ***
