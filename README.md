@@ -35,13 +35,15 @@ This project provides an end-to-end health data analytics workflow based on Indi
 
 ```
 ├── data/
+|   └──HMIS_original_data.csv
 │   └── HMIS_Cleaned.csv
-├── notebooks/
-│   └── analysis_main.ipynb
-├── outputs/
-│   └── plots/
-│   └── models/
-├── requirements.txt
+├──codes/
+│   └── cleaning_code.py
+│   └── EDA.py
+│   └── regression_classification_clustering.py
+│   └── app.py
+├── PPT/
+├── Report/
 └── README.md
 ```
 
