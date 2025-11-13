@@ -1,5 +1,4 @@
 # Data-Science-Project
-Absolutely! Here’s a **more detailed, professional README.md** that expands the EDA section with specifics on **univariate, bivariate, and multivariate analysis**, as well as clear mention of matrices, correlation structure, and visuals.
 
 ***
 
