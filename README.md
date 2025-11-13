@@ -2,7 +2,7 @@
 
 ***
 
-# 🏥 HMIS State-wise Health Data Science Project
+# HMIS State-wise Health Data Science Project
 
 ## Overview
 
