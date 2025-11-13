@@ -42,8 +42,8 @@ This project provides an end-to-end health data analytics workflow based on Indi
 │   └── EDA.py
 │   └── regression_classification_clustering.py
 │   └── app.py
-├── PPT/
-├── Report/
+├── PPT
+├── Report
 └── README.md
 ```
 
