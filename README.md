@@ -194,11 +194,3 @@ This project provides an end-to-end health data analytics workflow based on Indi
 
 MIT or open-source license of your choosing.
 
-***
-
-**For feedback, collaboration, or queries, please submit a GitHub issue or reach out to the author(s).**
-
-***
-
-Let me know if you’d like to expand any technical detail, add code snippets, or want `requirements.txt` and sample folder structure included!
->>>>>>> 369a0413e03c6d986e51a463cd30f49a06f0b25e
